@@ -1,6 +1,8 @@
 /* -------------------------------- FOOTER -------------------------------- */
 .rodape {
-    padding: 2em 5%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
     text-align: center;
     font-size: 0.7rem;
 }
@@ -18,10 +20,6 @@
 
 .rodape__infors-empresa {
     line-height: 1.5;
-}
-
-.rodape__section {
-    margin-top: 2em;
 }
 
 .rodape__item-midias-sociais {
@@ -43,4 +41,69 @@
 .rodape_item-lista {
     font-weight: 500;
     margin: 0.625em 0;
+}
+
+/*------------------------------- RESPONSIVE ------------------------------*/
+@media (max-width: 640px) {
+    .rodape__section {
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1200px) {
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 1rem;
+    }
+
+    .rodape__section--sobre,
+    .rodape__section--cursos,
+    .rodape__section--links,
+    .rodape__section--newsletter {	
+        width: 45%;
+    }
+
+    .rodape__section--cursos {
+        order: 1;
+        margin: 0;
+    }
+
+    .rodape__section--sobre {
+        order: 3;
+        margin-top: 2em;
+    }
+
+    .rodape__section--newsletter {
+        order: 4;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+
+        text-align: left;
+    }
+
+    .rodape__title {
+        font-size: 1em
+    }
+
+    .rodape__lista-midias-sociais {
+        justify-content: left;
+    }
+
+    .rodape__section {
+        margin-top: 0;
+    }
+
+    .rodape__section {
+        margin-left: 2em;
+    }
 }
