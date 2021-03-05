@@ -196,7 +196,7 @@
     }
 }
 
-.planos--pagamentos + p + p {
+.planos--pagamentos + p + a {
     display: flex;
     position: center;
     
